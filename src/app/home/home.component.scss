@@ -1,0 +1,24 @@
+.home-page {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    .sidenav {
+        width: 200px;
+        background-color: #5ac65c;
+        padding: 0 5px;
+        border: 1px solid black;
+        .project {
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: 400;
+            margin: 15px auto;
+            &:hover {
+                border: 0.5px dotted black;
+            }
+        }
+    }
+    .dashboard {
+        width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+<div class="dashboard-page">
+  <div class="search-bar">
+    <input placeholder="Search Dashboards" [(ngModel)]="searchText" type="text" name="search dashboard" id="">
+  </div>
+  <div class="dashboard-widgets">
+    <div class="widget" *ngFor="let dboard of dashboards | filter: searchText">
+      {{dboard?.name}}
+    </div>
+  </div>
+</div>
